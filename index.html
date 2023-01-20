@@ -20,6 +20,7 @@
       height: 100vh;
       margin: unset;
       background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), 	hsl(240, 73%, 65%));
+      background-repeat: no-repeat;
     }
 
     .kumbhsans-400{
@@ -122,6 +123,50 @@
       margin-left: -90px
     }
 
+    @media only screen and (max-width: 425px) {
+      body{
+        height: 100%;
+      }
+
+      .faq-card{
+        flex-wrap: wrap;
+      }
+
+      .flex-container {
+        height: unset;
+      }
+
+      .faq_section > div{
+        width: 100%;
+      }
+
+      p{
+        font-size: 12px;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      .right-side{
+        background-image: none;
+        margin-top: -50px;
+        margin-left: 50%;
+        margin-right: 50%;
+      }
+
+      .image-on-top{
+        width: 100px;
+        margin-left: 0px;
+      }
+
+      .vector-image{
+        width: 200px;
+      }
+
+
+    }
+
   </style>
 </head>
 <body>
@@ -130,7 +175,7 @@
    
     <div class="faq-card">
       <div class="right-side">
-        <img src="images/illustration-woman-online-desktop.svg" alt="">
+        <img src="images/illustration-woman-online-desktop.svg" alt="" class="vector-image">
         <img src="images/illustration-box-desktop.svg" alt="" class="image-on-top">
       </div>
       <div class="left-side">
